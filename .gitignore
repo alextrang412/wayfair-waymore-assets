@@ -1,0 +1,22 @@
+# Allow-list: ignore everything except the files this repo is meant to host
+*
+!.gitignore
+!README.md
+!*.png
+
+# Never commit credentials or secrets (these rules win over the allow-list above)
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.kdbx
+id_rsa*
+*secret*
+*credential*
+*token*
+client_secret*.json
+service-account*.json
+.aws/
+.ssh/
